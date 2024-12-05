@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Piece Fan Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>One Piece Fan Page</h1>
+        <nav class="nav">
+            <img src="straw-hat-logo.png" alt="Straw Hat Pirates Logo" class="logo">
+            <a href="#about">About One Piece</a>
+            <a href="#characters">Main Characters</a>
+            <a href="#story">The Story</a>
+            <a href="#facts">Fun Facts</a>
+        </nav>
+    </header>
+
+    <section id="about" class="section">
+        <h2>About One Piece</h2>
+        <p>One Piece is a popular Japanese manga series written and illustrated by Eiichiro Oda. The story follows Monkey D. Luffy and his pirate crew as they explore the Grand Line in search of the legendary treasure known as the "One Piece".</p>
+    </section>
+
+    <section id="characters" class="section">
+        <h2>Main Characters</h2>
+        <ul>
+            <li><strong>Monkey D. Luffy</strong> - The protagonist and captain of the Straw Hat Pirates, known for his rubber-like body and endless optimism.</li>
+            <li><strong>Roronoa Zoro</strong> - The swordsman of the crew, skilled in the three-sword style.</li>
+            <li><strong>Nami</strong> - The crew's navigator, a brilliant cartographer with a knack for predicting weather patterns.</li>
+            <li><strong>Usopp</strong> - The sniper of the crew, known for his tall tales and inventions.</li>
+            <li><strong>Sanji</strong> - The cook of the crew, skilled in martial arts and passionate about chivalry and food.</li>
+            <li><strong>Tony Tony Chopper</strong> - The doctor of the crew, a reindeer who ate a Devil Fruit that allows him to transform into a human.</li>
+            <li><strong>Nico Robin</strong> - The archaeologist of the crew, with a deep interest in the world’s forgotten history.</li>
+            <li><strong>Franky</strong> - The shipwright, a cyborg with incredible strength and skills in building ships.</li>
+            <li><strong>Brook</strong> - The musician, a skeleton who came back to life due to the Revive-Revive Fruit.</li>
+            <li><strong>Jinbe</strong> - The fish-man and helmsman of the Straw Hat Pirates, skilled in Fish-Man Karate.</li>
+        </ul>
+    </section>
+
+    <section id="story" class="section">
+        <h2>The Story</h2>
+        <p>The story of One Piece revolves around Monkey D. Luffy, a young man with the ability to stretch like rubber after eating the Gum-Gum Fruit, one of many mysterious Devil Fruits. He forms a diverse pirate crew, the Straw Hat Pirates, and embarks on an epic adventure across the Grand Line. Their ultimate goal is to find the One Piece, the greatest treasure in the world, and become the Pirate King!</p>
+    </section>
+
+    <section id="facts" class="section">
+        <h2>Fun Facts</h2>
+        <ul>
+            <li>One Piece holds the world record for the most copies published for a single manga series!</li>
+            <li>The series first began serialization in Shonen Jump in 1997 and is still ongoing.</li>
+            <li>The infamous "One Piece" treasure has yet to be revealed, but it is said to be something that will shake the world.</li>
+        </ul>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 One Piece Fan Page. All rights reserved.</p>
+    </footer>
+</body>
+<script type="module">
+    import Chatbox from 'https://cdn.jsdelivr.net/npm/@chaindesk/embeds@latest/dist/chatbox/index.js';
+  
+    const widget = await Chatbox.initBubble({
+      agentId: 'cm4bb3i3i0lvq2056ggztosf9',
+      
+      // optional 
+      // If provided will create a contact for the user and link it to the conversation
+      contact: {
+        firstName: 'Pirate',
+        email: 'customer@email.com',
+        phoneNumber: '+33612345644',
+        userId: '42424242',
+      },
+      // optional
+      // Override initial messages
+      initialMessages: [
+        'Hello Georges how are you doing today?',
+        'How can I help you ?',
+      ],
+      // optional
+      // Provided context will be appended to the Agent system prompt
+      context: "The user you are talking to is John. Start by Greeting him by his name.",
+    });
+  
+    // open the chat bubble
+    widget.open();
+  
+    // close the chat bubble
+    widget.close()
+  
+    // or 
+    widget.toggle()
+  </script>
+</html>
